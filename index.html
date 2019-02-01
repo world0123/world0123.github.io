@@ -234,10 +234,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>asdas</p>
-        
-          <a class="article-more-a" href="/2019/01/31/使用git和hexo搭建博客/#more">more >></a>
-        
+        <a id="more"></a> 
+<p>1.git 用于上传和下载repository上的文件</p>
+<p>touch hello.txt—-创建一个文件，用于git init定义一个.git文件，从而来存储克隆下来的rope</p>
+<p>git status—-查看Repo的状态</p>
+<p>git add hello.txt—-git add选择那些文件是需要提交的，这些被选择的作业就进入stage状态，等待最后被git commit</p>
+<p>git reset—-取消stage状态</p>
+<p>git commit -m ‘注释’—-提交</p>
+<p>git commit –amend—-修改之前的commit叙述</p>
+<p>git reset HEAD^ –soft—-取消commit,但保留修改的文件或项目</p>
+<p>git reset HEAD^ –hard—-回到上一次commit干净的状态</p>
+<p>git remote add origin htts://—-一个项目可能有多个远程Resipoditor，为了区分不同的远程repositories，我们就要给他们其不同的名字，这里的origin，就是这个分支的名字</p>
+<p>git push origin master—-这里git push还会要求输入你GitHub的用户和密码，其有两个参数①远程仓库的origin名称②分支</p>
+<p>git clone <a href="http://----克隆他人Repo，将其在本地创建" target="_blank" rel="noopener">http://----克隆他人Repo，将其在本地创建</a></p>
+<p>git pull—-跟新获取</p>
+<p>git commit -m’注释’/git push/git pull</p>
+<p>2.hexo 可以用于</p>
+<p>hexo deploy—-部署到Github</p>
+<p>hexo new—-新建文章</p>
+<p>hexo new page—-新建页面</p>
+<p>hexo generate—-生成静态页面至public目录</p>
+<p>hexo server—-开启预览访问端口（默认端口是4000）</p>
+<p>hexo help—-查看帮助</p>
+<p>hexo version—-查看hexo的版本</p>
+
       
 
       

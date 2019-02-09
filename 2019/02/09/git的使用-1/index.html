@@ -16,15 +16,10 @@
 <meta property="og:site_name" content="H-Change的个人博客">
 <meta property="og:description" content="Git(读音为/gɪt/。)是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。  学习如何使用git来管理GitHub的仓库">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2019/02/09/git的使用-1/myBlog/source/_posts/git的使用-1/1549711731952.png">
-<meta property="og:image" content="http://yoursite.com/2019/02/09/git的使用-1/myBlog/source/_posts/git的使用-1/1549711084713.png">
-<meta property="og:image" content="http://yoursite.com/2019/02/09/git的使用-1/myBlog/source/_posts/git的使用-1/1549711574015.png">
-<meta property="og:image" content="http://yoursite.com/2019/02/09/git的使用-1/myBlog/source/_posts/git的使用-1/1549712148696.png">
-<meta property="og:updated_time" content="2019-02-09T12:14:42.523Z">
+<meta property="og:updated_time" content="2019-02-09T13:01:26.568Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git的使用">
 <meta name="twitter:description" content="Git(读音为/gɪt/。)是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。  学习如何使用git来管理GitHub的仓库">
-<meta name="twitter:image" content="http://yoursite.com/2019/02/09/git的使用-1/myBlog/source/_posts/git的使用-1/1549711731952.png">
   
     <link rel="alternative" href="/atom.xml" title="H-Change的个人博客" type="application/atom+xml">
   
@@ -186,15 +181,11 @@
 <p><strong>1</strong>使用git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> ，将仓库hexo-theme-yilia克隆到本地磁盘</p>
 <hr>
 <p><strong>2</strong>.首先我们进入我们克隆下的仓库（仓库中含有.git文件用来存储历史信息和配置信息），使用git status指令查看仓库状态（包括哪些文件更新了，哪些是新添的，哪些是被删除了等等），如图显示nothing to commit,working tree clean ,没有文件等待被提交，工作树是空的，表示一切正常</p>
-<p><img src="//yoursite.com/2019/02/09/git的使用-1/myBlog\source\_posts\git的使用-1\1549711731952.png" alt="1549711731952"></p>
 <hr>
 <p><strong>3</strong>.因为我们要把克隆下来的仓库上传到自己的github库中，所以我们这里需要连接远程库（这是一个在GitHub上新建的空库），一个项目可能有多个远程Repositories,为了区分不同的远程库，我们就要给他们起不同发的名字，<strong>注意这里theme1是我们给远程repository起的名字。名字不能重复</strong>（同一个名字不能给多个远程库使用）</p>
-<p><img src="//yoursite.com/2019/02/09/git的使用-1/myBlog\source\_posts\git的使用-1\1549711084713.png" alt="1549711084713"></p>
 <p>第二张图是报错的情况，显示origin已经存在（origin是之前我创建的一个远程库名）</p>
-<p><img src="//yoursite.com/2019/02/09/git的使用-1/myBlog\source\_posts\git的使用-1\1549711574015.png" alt="1549711574015"></p>
 <hr>
 <p><strong>4</strong>.连接成功以后，就可以上传了，git push theme1 master指令（这条指令有两个参数，一个是远程Repo的名称【这里为theme1】；第二个是分支push【master是每个Repo的默认分支】），特别注意：这里的git push还会要求你输入你的github的用户名和密码才能运行</p>
-<p><img src="//yoursite.com/2019/02/09/git的使用-1/myBlog\source\_posts\git的使用-1\1549712148696.png" alt="1549712148696"></p>
 <p>之后等待上传完成即可</p>
 
       

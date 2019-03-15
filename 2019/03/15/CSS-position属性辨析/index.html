@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 微信小程序开发，AppID | H-Change的个人博客</title>
+  <title>CSS*position属性辨析 | H-Change的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="H-Change的个人博客">
-<meta property="og:url" content="http://yoursite.com/tags/微信小程序开发，AppID/index.html">
+  <meta name="description" content="position属性规定元素的定位类型。">
+<meta name="keywords" content="CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS*position属性辨析">
+<meta property="og:url" content="http://yoursite.com/2019/03/15/CSS-position属性辨析/index.html">
 <meta property="og:site_name" content="H-Change的个人博客">
+<meta property="og:description" content="position属性规定元素的定位类型。">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2019/03/15/CSS-position属性辨析/D:/myBlog/source/_posts/CSS-position属性辨析/1.png">
+<meta property="og:updated_time" content="2019-03-15T14:26:30.988Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="H-Change的个人博客">
+<meta name="twitter:title" content="CSS*position属性辨析">
+<meta name="twitter:description" content="position属性规定元素的定位类型。">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/15/CSS-position属性辨析/D:/myBlog/source/_posts/CSS-position属性辨析/1.png">
   
     <link rel="alternative" href="/atom.xml" title="H-Change的个人博客" type="application/atom+xml">
   
@@ -150,60 +157,202 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-CSS-position属性辨析" class="article article-type-post " itemscope="" itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/11/微信小程序AppID/" class="archive-article-date">
-  	<time datetime="2019-02-11T01:51:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-11</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/02/11/微信小程序AppID/">微信小程序AppID</a>
+    <h1 class="article-title" itemprop="name">
+      CSS*position属性辨析
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/03/15/CSS-position属性辨析/" class="archive-article-date">
+  	<time datetime="2019-03-15T13:24:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-15</time>
+</a>
+        
+      </header>
+    
+    <!-- 目录内容 -->
+
+<!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>position属性规定元素的定位类型。</p>
+<a id="more"></a>
+<p>​       这个属性定义建立元素布局所用的定位机制。<strong>任何元素</strong>都可以定位，不过绝对或固定元素会<strong>生成一个块级框</strong>，而不论该元素本身是什么类型。相对定位元素会相对于它在正常流中的默认位置偏移。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">absolute</td>
+<td style="text-align:left">生成<strong>“绝对”定位</strong>的元素，生成的元素相对于static定位以外的第一个父元素（最近的祖先）进行定位，如果不存在满足条件的祖先，则相对body定位。该元素脱离页面中的普通流并改变Display的属性。</td>
+</tr>
+<tr>
+<td style="text-align:left">fixed</td>
+<td style="text-align:left">生成<strong>固定定位</strong>的元素，相对于浏览器窗口进行定位。</td>
+</tr>
+<tr>
+<td style="text-align:left">relative</td>
+<td style="text-align:left">生成<strong>相对定位</strong>元素，相对于原来位置（原来位置指在文档流中默认的位置，若加上了浮动时，那么这个原来位置就是你设定浮动时的位置）的偏移，原来位置依然占据空间。</td>
+</tr>
+<tr>
+<td style="text-align:left">static</td>
+<td style="text-align:left">默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明 ）。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>absolute值图解：</p>
+</blockquote>
+<p><img src="/2019/03/15/CSS-position属性辨析/D:/myBlog\source\_posts\CSS-position属性辨析\1.png" alt="1.png"></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">微信小程序开发，AppID</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/15/CSS-position属性辨析/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/02/15/sfsaf/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">sfsaf</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -226,9 +375,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
